@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/muban_shouye_daohang.css">
+        <link rel="stylesheet" href="css/swiper.min.css"> <!--调用CSS样式-->
+        <style type="text/css">
+       
+        /*给滑动图片设置一个DIV样式*/
+        .div_zhongjian1{
+           
+            position:relative;
+            margin-top: 0px;
+            padding: 0;
+            margin: 0;
+            height:400px;
+            width:100%;
+            background:#FFD3B9;
+            border-radius: 10px;
+        }
+        .swiper-container {         /*定义Swiper（一堆图片滑动范围）大小*/
+        width: 100%;
+        height: 300px;
+        margin: 0px auto;
+        }
+        .swiper-slide {             /*定义单张图片的样式*/
+            background: #f1f1f1;
+            color:#000;
+            text-align: center;
+            line-height: 300px;
+        }
+        a.tupian_lianjie{
+            position:relative;
+            top:-140px;
+            font-size: 25px;
+            color:white;
+        }
+        .div_zhongjian2{
+            position:relative;
+            margin-top: 0px;
+            padding: 0;
+            margin: 0;
+            top:60px;
+            height:420px;
+            width:100%;
+            background:#FFD3B9;
+            border-radius: 10px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="div_header" >
+            <img class="toubu_donghua"src="images/toubu.png" alt="" >
+            <input  id="content"type="text" name="content" value="" >
+            <input  id="find"type="submit" name="find" value="搜索" style="color:white" > 
+            <a href="zhuce.html" style="position:relative;left:100px"> <font color="white">注册</font></a>
+            <a href="denglu.html"  style="position:relative;left:100px"> <font color="white">登陆</font> </a>   
+        </div>
+        <div id="div_daohang">
+            <nav>
+                <ul class="daohang">
+                    <strong>
+                        <li class="daohang"><a href="index.html" title="">首页</a></li>
+                        <li id="caipudaquan"  class="daohang" ><a href="#" title="">菜谱大全</a></li>
+                        <li id="yinshijiankang" class="daohang"><a href="#" title="">饮食健康</a></li>
+                        <li class="daohang"><a href="#" title="">美食菜单</a></li>
+                    </strong>
+                </ul>
+            </nav>
+        </div>
+        <div id="div_caipudaquan">
+            <ul>
+                    <li class="xiaodaohangs"><a  class="xiaodaohangs"href="jiachangcaipu.html" title="" >家常菜谱</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="jiachangcaipu.html" title="">家常菜</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="jiachangcaipu.html" title="">早餐</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="jiachangcaipu.html" title="">午餐</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="jiachangcaipu.html" title="">晚餐</a></li>
+                    <li class="xiaodaohangs"><a  class="xiaodaohangs"href="zhonghuacaixi.html" title="" >中华菜系</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="zhonghuacaixi.html" title="">川菜</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="zhonghuacaixi.html" title="">粤菜</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="zhonghuacaixi.html" title="">东北菜</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="zhonghuacaixi.html" title="">湘菜</a></li>
+                    <li class="xiaodaohangs"><a  class="xiaodaohangs"href="gedixiaochi.html" title="" >各地小吃</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="gedixiaochi.html" title="">四川小吃</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="gedixiaochi.html" title="">广东小吃</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="gedixiaochi.html" title="">北京小吃</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="gedixiaochi.html" title="">陕北小吃</a></li>
+                    <li class="xiaodaohangs"><a  class="xiaodaohangs"href="shicaibaike.html" title="" >食材百科</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="shicaibaike.html" title="">蔬菜</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="shicaibaike.html" title="">水果</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="shicaibaike.html" title="">谷类</a></li>
+                                    
+            </ul>
+        </div>
+        <div id="div_yinshijiankang">
+            <ul>
+                    <li class="xiaodaohangs"><a  class="xiaodaohangs"href="yinshijiankang.html" title="" >饮食健康</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="yinshijiankang.html" title="">饮食小常识</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="yinshijiankang.html" title="">美容瘦身</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="yinshijiankang.html" title="">养生妙方</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="yinshijiankang.html" title="">饮食禁忌</a></li>
+                    <li class="xiaodaohangs"><a  class="xiaodaohangs"href="gongnengxingtiaoli.html" title="" >功能性调理</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="gongnengxingtiaoli.html" title="">清热败火</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="gongnengxingtiaoli.html" title="">减肥</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="gongnengxingtiaoli.html" title="">祛痰</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="gongnengxingtiaoli.html" title="">乌发</a></li>
+                    <li class="xiaodaohangs"><a  class="xiaodaohangs"href="renqunshanshi.html" title="" >人群膳食</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="renqunshanshi.html" title="">孕妇</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="renqunshanshi.html" title="">老人</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="renqunshanshi.html" title="">产妇</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="renqunshanshi.html" title="">哺乳期</a></li>
+                    <li class="xiaodaohangs"><a  class="xiaodaohangs"href="jibingtiaoli.html" title="" >疾病调理</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="jibingtiaoli.html" title="">糖尿病</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="jibingtiaoli.html" title="">高血压</a></li>
+                        <li class="xiaodaohang"><a class="xiaodaohang"href="jibingtiaoli.html" title="">胃炎</a></li>
+                                    
+            </ul>
+        </div>
+
+        <div class="div_zhongjian1">
+                    <div id="tuijian" style="width:100%;text-align: center;height:100px;line-height:100px;">
+                    <font style="font-size:30px">今日午餐推荐：肥瘦相间的五花肉吃起来最解馋！</font>
+                    </div>
+                    <div class="swiper-container swiper-container0">
+
+                            <div class="swiper-scrollbar"></div>     <!-- 设置滚动条 -->
+
+                            <div class="swiper-button-prev" style="width:200px;"></div>   <!-- 设置导航按钮后 -->
+                            <div class="swiper-button-next" style="width:200px;"></div>    <!-- 设置导航按钮 上-->
+
+                            <div class="swiper-wrapper">               <!-- 设置图片内容 -->
+                                <div class="swiper-slide" style="background-image:url(images/zaocan1.jpg);">
+                                <a class="tupian_lianjie" href="">营养早餐</a></div>
+                                <div class="swiper-slide" style="background-image:url(images/zaocan2.jpg);">
+                                <a class="tupian_lianjie"href="">清新早餐</a></div>
+                                <div class="swiper-slide" style="background-image:url(images/zaocan3.jpg);">
+                                <a class="tupian_lianjie"href="">甜心早餐</a></div>
+                                <div class="swiper-slide" style="background-image:url(images/wucan1.jpg);"> 
+                                <a class="tupian_lianjie"href="">简约午餐</a></div>
+                                <div class="swiper-slide" style="background-image:url(images/wucan2.jpg);"> 
+                                <a class="tupian_lianjie"href="">奢华午餐</a></div>
+                                <div class="swiper-slide" style="background-image:url(images/wucan3.jpg);">
+                                 <a class="tupian_lianjie"href="">丰盛午餐</a></div>
+                                <div class="swiper-slide" style="background-image:url(images/wancan1.jpg);">
+                                 <a class="tupian_lianjie"href="">美味晚餐</a></div>
+                                <div class="swiper-slide" style="background-image:url(images/wancan2.jpg);">
+                                 <a class="tupian_lianjie"href="">快乐晚餐</a></div>
+                                <div class="swiper-slide" style="background-image:url(images/wancan3.jpg);"> 
+                                <a class="tupian_lianjie"href="">奢华晚餐</a></div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>    <!--使用分页器（小按钮）-->
+
+                    </div>
+               
+        </div>
+        <div class="div_zhongjian2">
+                    <div id="tuijian" style="width:100%;text-align: center;height:100px;line-height:100px;">
+                    <font style="font-size:30px">五月菜单推荐：顺时养生，补肾调阴阳！</font>
+                    </div>
+                    <div class="swiper-container swiper-container1">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide" style="position:relative;width:500px;height:300px;">
+                              <div id="tupian0" style=" position:absolute;background-image:url(images/zhou.jpg);width:500px;height:300px;"></div>
+                              <div id="tupian00" style=" position:absolute;display:none;width:500px;height:300px;"> </div>
+                          </div>
+                          <div class="swiper-slide" style="position:relative;width:500px;height:300px;">
+                              <div id="tupian1" style=" position:absolute;background-image:url(images/yu.jpg);width:500px;height:300px;"></div>
+                              <div id="tupian11" style=" position:absolute;display:none;width:500px;height:300px;"> </div>
+                          </div>
+                          <div class="swiper-slide" style="position:relative;width:500px;height:300px;">
+                              <div id="tupian2" style=" position:absolute;background-image:url(images/shaokao.jpg);width:500px;height:300px;"></div>
+                              <div id="tupian22" style=" position:absolute;display:none;width:500px;height:300px;"> </div>
+                           </div>
+                          <div class="swiper-slide" style="position:relative;width:500px;height:300px;">
+                             <div id="tupian3" style=" position:absolute;background-image:url(images/tang.jpg);width:500px;height:300px;"></div>
+                              <div id="tupian33" style=" position:absolute;display:none;width:500px;height:300px;"> </div>
+                          </div>
+                          <div class="swiper-slide" style="position:relative;width:500px;height:300px;">
+                               <div id="tupian4" style=" position:absolute;background-image:url(images/haixian.jpg);width:500px;height:300px;"></div>
+                              <div id="tupian44" style=" position:absolute;display:none;width:500px;height:300px;"> </div>
+                        </div>
+                        </div>  
+                  </div>
+        </div>
+        <footer style="position:relative;top:60px;" >
+            <div class="div_weiba">
+                 <div id="div_time">
+                 <p id="time" class="time" style="position:relative;margin-top:0px;">累次访问美食天下网页次数:</p>
+                 <p  id="timeshow"style="position:relative;">2018年12月5号星期三</p>
+                 <p  id="timeshow1"style="position:relative;">18：35</p>
+                 </div>
+                <img class="weiba_donghua"src="images/weiba.png" height="62" width="209" alt="">
+                <P style="color:white">作者：许浩培&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </P>
+                <P style="color:white">班级：16软件3班</P>
+                <P style="color:white">学号：16240520</P>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="js/muban_xialacaidan.js"></script>
+    <script src="js/swiper.min.js"></script>        <!--调用JS代码-->
+    <script>
+        
+        var swiper = new Swiper('.swiper-container0',{
+            
+            /*设置页面第一次图片显示的位置，这里设置图片集起始位置1代表数组1元素*/
+            initialSlide: 1,  
+
+            /*设置每张图片的间距为50PX*/
+            spaceBetween: 0,
+
+            /*设置起始窗口可以看见3张图片*/
+            slidesPerView: 3,
+
+            /*设置一堆图片最前与最后面是否空留一个位置*/
+            centeredSlides: true,
+
+            /*设置图片查看可以循环*/
+            loop:true,
+
+            slideToClickedSlide: true,
+
+            /*设置鼠标在图片上的形状为一只手*/
+            grabCursor: true,
+
+             /*设置滚动条的进度动态效果*/
+            scrollbar: {
+              el: '.swiper-scrollbar',
+            },
+
+            /*设置在一堆图片里面鼠标指轮上下滑可以控制图片切换*/
+            mousewheel: {
+              enabled: true,
+            },
+            
+            keyboard: {
+              enabled: true,
+            },
+
+            /*设置分页器的动态效果（小按钮）*/
+            pagination: {                  
+              el: '.swiper-pagination',
+            },
+
+             /*设置按钮的动态效果*/
+            navigation: {                  
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+        });
+        var swiper = new Swiper('.swiper-container1', {
+              effect: 'coverflow',
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+               autoplay:500,
+            autoplayDisableOnInteraction:false,
+              initialSlide: 2,           //设置页面第一次图片显示的位置
+              coverflowEffect: {
+                rotate: 50,             //设置图片旋转的角度
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+              },
+              
+            });
+        var tupian0=document.getElementById('tupian0');
+        var tupian00=document.getElementById('tupian00');
+        var tupian1=document.getElementById('tupian1');
+        var tupian11=document.getElementById('tupian11');
+        var tupian2=document.getElementById('tupian2');
+        var tupian22=document.getElementById('tupian22');
+        var tupian3=document.getElementById('tupian3');
+        var tupian33=document.getElementById('tupian33');
+        var tupian4=document.getElementById('tupian4');
+        var tupian44=document.getElementById('tupian44');
+      
+        tupian0.onmouseover=function(){
+            tupian0.style.opacity=0.5;
+            tupian00.style.color='#000000';
+            tupian00.innerHTML='<strong>粳米、灿米、粟米梁米粥，味甘，性温、平，无毒。</strong>';
+            tupian00.style.display='block';
+        }
+        tupian00.onmouseout=function(){
+            tupian0.style.opacity=1;
+            tupian00.style.display='none';
+        }
+
+        tupian1.onmouseover=function(){
+            tupian1.style.opacity=0.5;
+            tupian11.style.color='#000000';
+            tupian11.innerHTML='<strong>春酒香熟鲈鱼美，谁同醉？缆却扁舟篷底睡。</strong>';
+            tupian11.style.display='block';
+        }
+        tupian11.onmouseout=function(){
+            tupian1.style.opacity=1;
+            tupian11.style.display='none';
+        }
+        tupian2.onmouseover=function(){
+            tupian2.style.opacity=0.5;
+            tupian22.style.color='#000000';
+            tupian22.innerHTML='<strong>烤肉滋滋发出声响,一滴热油顺着饱满的肉的纹路慢慢滑下,令人心醉。</strong>';
+            tupian22.style.display='block';
+        }
+        tupian22.onmouseout=function(){
+            tupian2.style.opacity=1;
+            tupian22.style.display='none';
+        }
+        tupian3.onmouseover=function(){
+            tupian3.style.opacity=0.5;
+            tupian33.style.color='#000000';
+            tupian33.innerHTML='<strong>汤色白如乳，肥而不腻，滴在桌上会自然凝聚如珠</strong>';
+            tupian33.style.display='block';
+        }
+        tupian33.onmouseout=function(){
+            tupian3.style.opacity=1;
+            tupian33.style.display='none';
+        }
+        tupian4.onmouseover=function(){
+            tupian4.style.opacity=0.5;
+            tupian44.style.color='#000000';
+            tupian44.innerHTML='<strong>虾肉味道鲜美，回味万千。尤其是品尝完龙虾肉之后，可以汤汁拌饭，美味之极</strong>';
+            tupian44.style.display='block';
+        }
+        tupian44.onmouseout=function(){
+            tupian4.style.opacity=1;
+            tupian44.style.display='none';
+        }
+
+        
+            </script>
+</html>

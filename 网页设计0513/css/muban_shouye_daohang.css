@@ -1,0 +1,172 @@
+/* 
+* @Author: anchen
+* @Date:   2018-05-01 14:26:07
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-05-16 19:27:45
+*/
+        #div_header{
+            margin:0 auto;
+            width:100%;
+            height:90px;
+            text-align: center;
+            line-height: 90px;
+            font-size: 20px;
+            background:#AE0000;
+
+        }
+        .toubu_donghua{
+            position:absolute;
+            left:25%;
+            top:4%;
+        }
+        /*设置头图片输入框的样式*/
+        #content{
+            position:relative;
+            left:80px;
+            width:250px;
+            height:30px;
+            border-radius: 5px;
+        }
+        /*设置头图片搜索按钮的样式*/
+        #find{
+            position:relative;
+            left:10px;
+            top:2px;
+            width:60px;
+            height:30px;
+            border-radius: 5px;
+            background:#AE0000;
+            
+        }
+        /*设置链接的样式*/
+        a{
+            text-decoration: none;  /*没有下拉线*/
+            color:black;            /*字体颜色为黑*/
+        }
+        /*设置导航的样式*/
+        #div_daohang{
+            margin:0 auto;
+            width:980px;
+            height:60px;
+            font-size: 20px;
+            line-height: 45px;
+        }
+
+        ul{
+             margin-left: 30px;
+             list-style: none;
+             margin-top: 0px;
+             height:60px;
+
+        }
+        li.daohang{
+            line-height: 60px;
+            height:60px;
+            float:left;
+            margin-left: 0px;
+            width:120px;
+            text-align: center;
+        }
+        li.daohang:hover{
+            background:#D0D0D0;
+        }
+        /*下拉菜单*/
+        #div_caipudaquan{
+            position:absolute;
+            top:158px;
+            left:25%;
+            background-image: url(../images/xiaodaohang.jpg);
+            margin:0 ;
+            width:980px;
+            height:230px;
+            transform:scale( 0);
+            z-index:4;
+         }
+        #div_yinshijiankang{
+            position:absolute;
+            top:158px;
+            left:25%;
+            background-image: url(../images/xiaodaohang2.jpg);
+            margin:0 ;
+            width:980px;
+            height:230px;
+            transform:scale( 0);
+            z-index:3;
+        }
+
+        li.xiaodaohangs{
+            width:80px;   
+        }
+        
+        a.xiaodaohangs{
+            color:red;
+        }
+        a.xiaodaohangs:hover {
+            background:red;
+            color:white;
+        }
+        li.xiaodaohang{
+            float:left;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 30px;
+            width:50px;
+            height:20px;
+            text-align: center;
+            
+        }
+        
+        a.xiaodaohang{
+            font-size: 10px;
+        }
+        a.xiaodaohang:hover{
+             background:red;
+            color:white;
+        }
+        .div_zhongjian{
+            position:relative;
+            margin-top: 0px;
+            padding: 0;
+            margin: 0;
+            height:600px;
+            width:100%;
+            background:#FFD3B9;
+            border-radius: 10px;
+        }
+        
+        .div_weiba{
+            position:relative;
+            background:#272727 ;
+            width: 100%;
+            height:200px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .weiba_donghua{
+            position:relative;
+            left:-180px;
+            border-radius: 10px;
+            animation:donghuanxiaoguo 5s infinite ;
+        }
+        @keyframes donghuanxiaoguo{
+            0%{transform: translate(0px,0px); }/*一开始的状态*/ 
+            15%{transform: translate(180px,0px)rotateY(90deg);}   
+            30%{transform: translate(360px,0px)rotateY(0deg);}/*总时间的60%-100%*做这个效果 此时Y=600 往Y走回0*/
+            40%{transform: translate(360px,120px)rotateY(0deg); }/*一开始的状态*/
+            50%{transform: translate(360px,0px)rotateY(0deg); }/*一开始的状态*/
+            65%{transform: translate(180px,0px)rotateY(90deg); }
+            80%{transform: translate(0px,0px)rotateY(0deg); }/*一开始的状态*/
+            90%{transform: translate(0px,120px); }/*一开始的状态*/
+            100%{transform: translate(0px,0px); }
+            }
+
+         #div_time{
+            margin:0px;
+            position:absolute;
+            color:yellow;
+            font-size:25px;
+            width:260px;
+            height:70px;
+            
+        }    
+        
