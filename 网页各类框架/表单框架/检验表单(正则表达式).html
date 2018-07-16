@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+     #div_waibu{                   /*定义检验表单存在的范围*/
+         position:relative;
+         border: solid 1px black;
+         border-radius: 10px;
+     }
+     
+      .table_jianyan{               /*定义检验表单table类名为table_jianyan的格式*/
+        position:relative;
+        width:300px;                 /*设置表格的宽度*/
+        margin:10px auto ;           /*设置表格的自动居中*/
+        border:solid 1px black;    /*设置表格的边跨*/
+        
+      }
+      table.table_jianyan td{      /*定义检验表单table类名为table_jianyan里面td的格式*/
+        text-align: center;       /*设置单元格里面文字得对齐方式*/
+        border:1px solid black;  /*设置单元格的边跨*/
+      }
+      table.table_jianyan input{   /*定义检验表单里面input的格式*/
+        height:30px;
+        width:200px;
+        border-radius: 7px;
+      }
+      table.table_jianyan td.font{  /*定义检验表单table类名为table_jianyan里面td类名为font的格式*/
+        position:absolute;
+         display:none;
+         width:200px;
+         color:red;
+         font-size:12px;
+         height:30px;
+         line-height:30px;           /*与hegiht同高 目的是为了使里面的文字垂直居中*/
+         border:0px solid black;
+      }
+    </style>
+    <script type="text/javascript">
+        var yes=false;
+        var arrfonts        =document.getElementsByClassName('font');    //获取提示文字的td对象
+        var userAccount     =document.getElementById('userAccount');
+        var userPassword    =document.getElementById('userPassword');
+        var userName        =document.getElementById('userName');
+        var userTel         =document.getElementById('userTel');
+        var idCard          =document.getElementById('idCard');
+        var email           =document.getElementById('email');
+        var zip             =document.getElementById('zip');
+        
+        var TuserAccount    =/^\d{8}/;//8位数字
+        var TuserPassword   =/^(?![^a-zA-Z]+$)(?!\D+$)/;  //密码必须包含数字和字母
+        var TuserName       =/\S/; 
+        var TuserTel        =/^[1][3,4,5,7,8][0-9]{9}$/;//手机号码13/4/5/7/8xxxxxxxxx
+        var TidCard         =/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/; //身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X     
+        var Temail          =/^[0-9a-z][0-9a-z\-\_\.]+@([0-9a-z][0-9a-z\-]*\.)+[a-z]{2,}$/i;//邮箱  
+        var Tzip            =/^[1-9]\d{5}$/;//邮编为1-9的6位数字
+        var arrT            =new Array(TuserAccount,TuserPassword,TuserName,TuserTel,TidCard,Temail,Tzip); //为函数onBlur(obj,index)服务
+        
+        function onBlur(obj,index) //
+        {
+        
+        if(arrT[index].test(obj.value)==false)
+                {
+                    arrfonts[index].style="display:block";
+                    yes=false;
+                } 
+        else   
+                {
+                    arrfonts[index].style="display:none";
+                    yes=true;
+                } 
+        }
+        function yes_no()
+        {        
+        alert(yes);    
+            return yes;
+        }
+    
+    </script>
+</head>
+<body>
+    <div id="div_waibu">
+      <form id="form"action="" method="post" accept-charset="utf-8"> 
+        <table class="table_jianyan" cellpadding="5">
+                      <tr>
+                         <td style="font-size:30px;"><strong>欢迎注册</strong></td>
+                     </tr>
+                     <tr>
+                         <td ><input id="userAccount" type="text" name="userAccount" value="" placeholder="一卡通账号" required onblur="onBlur(this,0)"></td> 
+                         <td class="font">*账号为8位数字</td>
+                     </tr>
+                     <tr>
+                         <td ><input id="userPassword"type="password" name="userPassword" value="" placeholder="密码" required onblur="onBlur(this,1)"></td>
+                         <td class="font">*密码必须包含英文和数字</td>  
+                     </tr>
+                     <tr>
+                         <td ><input id="userName"type="text" name="userName" value="" placeholder="姓名" required onblur="onBlur(this,2)"></td>
+                         <td class="font">*姓名不能为空</td>  
+                     </tr>
+                     <tr>
+                         <td ><input id="userTel"type="text" name="userTel" value="" placeholder="手机号码" required onblur="onBlur(this,3)"></td>
+                         <td class="font">*手机号码格式13/4/5/7/8xxxxxxxxx</td>  
+                     </tr>
+                     <tr>
+                         <td ><input id="idCard" type="text" name="idCard" value="" placeholder="身份证" required onblur="onBlur(this,4)"></td>
+                         <td class="font">*身份证格式不对</td>  
+                     </tr>
+                     <tr>
+                         <td ><input id="email" type="text" name="email" value="" placeholder="email" required onblur="onBlur(this,5)"></td>
+                         <td class="font">*邮箱格式为xxxx@xx.xxx</td>  
+                     </tr>
+                     <tr>
+                         <td ><input id="zip"type="text" name="zip" value="" placeholder="邮编" required onblur="onBlur(this,6)"></td>
+                         <td class="font">*邮编为1-9的6位数字</td>  
+                     </tr>
+                     <tr>
+                         <td ><input id="zhuce"type="submit" name="" value="注册" onclick=" return yes_no()"></td>  
+                     </tr>   
+             </table>
+       </form>      
+      </div>
+</body>
+</html>

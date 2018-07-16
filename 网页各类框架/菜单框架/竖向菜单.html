@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            #content{
+                position:relative;
+                margin:0 auto;
+                width:110px;
+                
+            }
+             #daohang{
+                position:relative;
+                margin:0 auto;         
+            }
+            #daohang li{
+                text-align: center;
+                list-style: none;
+                width:100px;
+                line-height: 30px;
+                cursor:pointer;   /*鼠标移动到此处时变手指*/
+            
+            }
+            .submenu{
+                display:none;
+                position:absolute;
+                left:100px;
+                
+            }
+            
+        </style>
+        <script type="text/javascript">
+         window.onload=function()
+         {
+            var ALi=document.getElementsByClassName('menu');
+            var anav=document.getElementsByClassName('submenu');
+            //alert(aLi.length);
+            for(var i=0;i<ALi.length;i++)
+            {
+                ALi[i].index=i;
+                ALi[i].onmouseover=function(){
+                 for(var i=0;i<ALi.length;i++){
+                    anav[i].style="display:none";
+                 }
+                 var top=this.index*30;   //改变每个submenu的顶部距离，使其与menu平行
+                 anav[this.index].style="display:block;top:"+top+"px;";
+                 }
+
+                 ALi[i].onmouseout=function(){
+                 for(var i=0;i<ALi.length;i++){
+                    anav[i].style="display:none";
+                 }
+                 }
+                
+            }
+         }
+        </script>
+    </head>
+    <body>
+     <div id="content">
+
+        <nav id="daohang">
+            <li class="menu">一级导航1
+              <nav class="submenu">
+                  <li>11二级导航1</li> <li>11二级导航2</li> <li>11二级导航3</li>
+              </nav>
+            </li>
+
+            <li class="menu">一级导航2
+            <nav class="submenu">
+                  <li>22二级导航1</li> <li>22二级导航2</li> <li>22二级导航3</li>
+            </nav>
+            </li>
+
+            <li class="menu">一级导航3
+            <nav class="submenu">
+                  <li>33二级导航1</li> <li>33二级导航2</li> <li>33二级导航3</li>
+            </nav>
+            </li>
+
+            <li class="menu">一级导航4
+            <nav class="submenu">
+                  <li>44二级导航1</li> <li>44二级导航2</li> <li>44二级导航3</li>
+            </nav>
+            </li>
+
+            <li class="menu">一级导航5
+            <nav class="submenu">
+                  <li>55二级导航1</li> <li>55二级导航2</li> <li>55二级导航3</li>
+            </nav>
+            </li>
+        </nav>
+        
+     </div>
+    </body>
+</html>
