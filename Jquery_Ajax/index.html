@@ -8,13 +8,26 @@
 <script type="text/javascript">
         $(document).ready(function() {
             $("#btn").click(function(){
-                $("#loadhtml").load("mr.html ");
+                $.get("index.php",
+                    {
+                    username:$("#username").val(),
+                    age:$("#age").val()
+                    },
+                    function(data,textStatus){
+                    $("#responseText").html("用户名："+data.username+"<br>留言内容:"+data.content);
+                    },
+                    json)
             })
         });
 
 </script>
 <body>
-    <input id="btn" type="button" name="" value="载入页面">
-    <div id="loadhtml"></div>
+    <form name="form" action="">
+        用户名：<input id="username" type="text" name="" value="">
+        <br>
+        内容:<textarea id="content"></textarea>
+        <input id="btn" type="button" name="" value="载入页面">
+        <div id="responseText"></div>
+    </form>
 </body>
 </html>
