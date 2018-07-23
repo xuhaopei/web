@@ -1,4 +1,10 @@
 [
-    {"name":"a","sex":"nv"},
-    {"name":"b","sex":"nan"}
+    {
+        "name":"a",
+        "sex":"nv"
+    },
+    {
+        "name":"b",
+        "sex":"nan"
+    }
 ]
