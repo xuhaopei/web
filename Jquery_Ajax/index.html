@@ -20,10 +20,11 @@
                 $.each(data,function(index,info){
                     htmlStr+="姓名："+info['name']+"<br>";
                     htmlStr+="性别："+info['sex']+"<br>";
-                })
+                }
+                $("#responseText").html(htmlStr);
+                alert(htmlStr);
+
             })
-            $("#responseText").html(htmlStr);
-            alert(htmlStr);
 
         });
 
