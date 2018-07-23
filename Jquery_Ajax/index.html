@@ -7,11 +7,22 @@
 <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
         $(document).ready(function() {
-                $.getScript("test.js",function(){
+            //调用JS
+               /* $.getScript("test.js",function(){
                      $("#btn").click(function(){
                         alert('成工');
                      })
-                })
+                })*/
+
+            $.getJSON("test.json",function(){
+                var htmlStr="";
+                $.each(data,function(index,info)){
+                    htmlStr+="姓名："+info['name']+"<br>";
+                    htmlStr+="性别："+info['sex']+"<br>";
+                }
+            })
+            $("#responseText").html(htmlStr);
+
         });
 
 </script>
