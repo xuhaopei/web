@@ -7,17 +7,11 @@
 <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
         $(document).ready(function() {
-            $("#btn").click(function(){
-                $.get("index.php",
-                    {
-                    username:$("#username").val(),
-                    age:$("#age").val()
-                    },
-                    function(data,textStatus){
-                    $("#responseText").html("用户名："+data.username+"<br>留言内容:"+data.content);
-                    },
-                    json)
-            })
+                $.getScript("test.js",function(){
+                     $("#btn").click(function(){
+                        alert('成工');
+                     })
+                })
         });
 
 </script>
