@@ -15,6 +15,7 @@
                 })*/
 
             $.getJSON("test.json",function(){
+                alert('??');
                 var htmlStr="";
                 $.each(data,function(index,info)){
                     htmlStr+="姓名："+info['name']+"<br>";
