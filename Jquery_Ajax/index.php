@@ -3,7 +3,7 @@
  * @Author: anchen
  * @Date:   2018-07-23 16:28:06
  * @Last Modified by:   anchen
- * @Last Modified time: 2018-07-24 12:09:32
+ * @Last Modified time: 2018-07-24 13:24:11
  */
 if(!empty($_GET['username'])&&!empty($_GET['content'])){
      $username=$_GET['username'];
