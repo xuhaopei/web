@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link rel="stylesheet" href="dist/css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+        <script type="text/javascript" src='jquery-3.3.1.min.js'></script>
+        
+
+       <style>
+           #call{
+               display: inline;
+               margin-left: 500px;
+           }
+           #number{
+               color:red;
+               display: inline;
+               text-align: center;
+           }
+           #zixun{
+                
+               color:black;
+               display: inline-block;
+           }
+           #daohang{
+               width: 100%;
+               height: 40px;
+               background: red;
+           }
+           .juzhong{
+               position:relative;
+               width: 68%;
+               margin: 0 auto;
+           }
+           footer{
+               text-align: center;
+               background: rgba(0,0,0,0.2);
+           }
+           footer .row{
+               position:relative;
+               height: 30px;
+               line-height: 30px;
+               font-size: 12px;
+               color:#444;
+           }
+
+           #daohang li{
+               list-style: none;
+               display: inline-block;
+               line-height:40px;
+               width: 100px;
+               text-align: center;
+               margin-left: -5px;
+           }
+           #daohang li:hover{
+               background: #FF5151;
+               cursor:pointer;
+           }
+           #daohang li a{
+               text-decoration:none;
+               color: white;
+           }
+           #daohang nav #study_courese{
+               width:170px;
+               background: #FF5151;
+               position: absolute;
+               left:95px;
+               z-index: 2;
+               display:none;
+           }
+           #daohang nav #study_courese li{
+               margin-left: 0px;
+               width: 170px;
+               text-align: left;
+           }
+           #lunbotu{
+            float: left;
+            border:1px solid black;
+            height:100%;
+            width:70%;
+           }
+           #baomingbiao{
+            float: left;
+            border:1px solid black;
+            margin-left: 5px;
+            height:100%;
+            width:28%;
+           }
+           .swiper-container {
+              width: 100%;
+              height: 100%;
+            }
+            .swiper-slide {
+              text-align: center;
+              
+              background: #fff;
+
+              /* Center slide text vertically */
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              -webkit-align-items: center;
+              align-items: center;
+            }
+       </style>
+       <script type="text/javascript">
+       $(document).ready(function() {
+        
+           $("#daohan_courese").mouseenter(function(event) {
+                $("#study_courese").slideDown(300);
+           });
+           
+           $("#daohan_courese").mouseleave(function(event) {
+                $("#study_courese").slideUp(300);
+           });
+           $("#study_courese").mouseenter(function(){
+                $("#study_courese").stop();
+           });
+           $("#study_courese").mouseleave(function(){
+                $("#study_courese").slideUp(300);
+           });
+       });
+       </script>
+    </head>
+    <body style="position:relative;margin:0 auto;width:100%;">
+    
+    <header style="position:relative;width:100%;">
+        <div class='juzhong'style="margin-bottom: 10px;height: 90px;">
+         <img src="images/aa.jpg" height="100%" alt="" />
+         <img src="images/call.png" height="20%" width="4%" alt="" id="call"/>
+         <div id="zixun">咨询热线：</div>
+         <div id="number">400-112-1728</div>
+        </div>
+         <div id="daohang">
+             <nav class="juzhong" style="">
+                 <li><a href="#">唯艺首页</a></li>
+                 <li id="daohan_courese"><a href="#">学习课程</a></li>
+                 <li><a href="#">学习方法</a></li>
+                 <li><a href="#">学员介绍</a></li>
+                 <li><a href="#">活动介绍</a></li>
+                 <li><a href="#">游学与留学</a></li>
+                 <div id="study_courese" style="">
+                     <li><a href="#">日语寒暑假班</a></li>
+                     <li><a href="#">日语初级课程</a></li>
+                     <li><a href="#">日语中级课程</a></li>
+                     <li><a href="#">日语高级课程</a></li>
+                     <li><a href="#">留学生考试辅导班(EJU)</a></li>
+                 </div>
+             </nav>
+         </div>
+    </header>
+
+    <section style="height:400px;" class="juzhong">
+    <div id="lunbotu" style="border:1px solid black">
+        <!-- Swiper -->
+      <div class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination1"></div>
+      </div>
+    </div>
+    <div id="baomingbiao">
+        <div style="width:100%;height:30px;background:#FF5151;color:white;line-height: 30px;text-align:center;">立即注册</div>
+        <form>
+            <table>
+                <tr></tr>
+            </table>
+        </form>
+    </div>
+     </section>
+
+
+     <footer >
+        <div class="row">深圳市唯艺教育</div>
+        <div class="row">福田区车公庙金润大厦</div>
+        <div class="row">咨询电话：400-112-1728，欢迎来电咨询！</div>
+     </footer>
+    
+    </body>
+    <script src="dist/js/swiper.min.js"></script>
+    <script>
+    var swiper1 = new Swiper('.swiper1', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination1',
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper('.swiper2', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+      },
+    });
+    var swiper3 = new Swiper('.swiper3', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination3',
+        clickable: true,
+      },
+    });
+  </script>
+</html>

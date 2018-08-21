@@ -1,0 +1,77 @@
+/* 
+* @Author: anchen
+* @Date:   2018-07-28 23:35:47
+* @Last Modified by:   anchen
+* @Last Modified time: 2018-08-06 10:54:47
+*/
+
+    #call{
+        display: inline;
+        margin-left: 500px;
+    }
+    #zixun{
+        color:black;
+        display: inline;
+    }
+    #number{
+        color:red;
+        display: inline;
+        text-align: center;
+    }
+     .swiper-container{
+            
+           
+            width: auto;
+        }
+        .swiper-slide{
+            
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+ button{
+            width:200px;
+        }
+        #tabs{
+            width:100%;
+
+        }
+        .ui-tabs{
+            padding: 0px;
+            background:white;
+        }
+        .ui-tabs-nav{
+            background:LightPink;
+            height:50px;
+
+        }
+        #tabs li{
+            top:8px;
+            margin-left: 10px;
+        }
+        #tabs li a{
+            color:#4169E1;
+        }
+         #tabs p{
+            font-size: 15px;
+         }
+         #tabs div{
+            background-image: url('2.jpg');
+         }
+         
+         #dialog-form table td{
+            text-align: right;
+         }
+         #dialog-form table input{
+            height:30px;
+            width:250px;
+         }
+         #dialog-form table select{
+            height:30px;
+            width:250px;
+            border-radius: 5px;
+         }
+         .ui-dialog-titlebar{
+            background:LightPink;
+         }
+
