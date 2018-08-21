@@ -123,6 +123,9 @@
                 font-size: 15px;
                 text-align: right;
             }
+            #baomingbiao table .zuo{
+                width:40px;
+            }
             #renmendongtai{
                 
                 padding-left: 5px;
@@ -133,13 +136,13 @@
                 
             }
             #jingcaihuodong{
-                
+                padding-left: 5px;
                 margin-left:10px;
                 float:left;
                 width:67%;
                 height: 100%;
                 border-radius: 10px;
-                border:1px solid black;
+                
             
             }
             .xiahuaxian{
@@ -167,6 +170,57 @@
             }
             #renmendongtai table tr a:hover{
                 color:#FF5151;
+            }
+            #jingcaihuodong #content{
+                overflow: hidden;
+            }
+            #jingcaihuodong #content td{
+                border:1px solid rgba(0,0,0,0.2);
+                height:60px;
+
+            }
+            .swiper-container1 {
+
+                width: 99%;
+                height: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                margin: 5px;
+                padding: 0px;
+            }
+            .swiper-container1 .swiper-slide {
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                    
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+            .swiper-container1 .swiper-slide .zuo{
+                width:50%;
+                height: 100%;
+                border:1px solid rgba(0, 0, 0, 0.3);
+                display:inline;
+            }
+            .swiper-container1 .swiper-slide .you{
+                margin-left: 10px;
+                width:48%;
+                height: 100%;
+                border:1px solid rgba(0, 0, 0, 0.3);
+                display:inline;
             }
             
        </style>
@@ -200,14 +254,14 @@
         </div>
          <div id="daohang">
              <nav class="juzhong" style="">
-                 <li><a href="#">唯艺首页</a></li>
+                 <li><a href="index.html">唯艺首页</a></li>
                  <li id="daohan_courese"><a href="#">学习课程</a></li>
                  <li><a href="#">学习方法</a></li>
                  <li><a href="#">学员介绍</a></li>
                  <li><a href="#">活动介绍</a></li>
                  <li><a href="#">游学与留学</a></li>
                  <div id="study_courese" style="">
-                     <li><a href="#">日语寒暑假班</a></li>
+                     <li><a href="hanshujia.html">日语寒暑假班</a></li>
                      <li><a href="#">日语初级课程</a></li>
                      <li><a href="#">日语中级课程</a></li>
                      <li><a href="#">日语高级课程</a></li>
@@ -244,10 +298,10 @@
         </div>
         <form>
             <table cellpadding="10" width="100%">
-                <tr><td>姓名:</td><td><input type="text" name="" value=""></td></tr>
-                <tr><td>手机:</td><td><input type="text" name="" value=""></td></tr>
-                <tr><td>邮箱:</td><td><input type="text" name="" value=""></td></tr>
-                <tr><td>课程:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td class="zuo">姓名:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td class="zuo">手机:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td class="zuo">邮箱:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td class="zuo">课程:</td><td><input type="text" name="" value=""></td></tr>
                 <td colspan="2" style="text-align:center"><input type="submit" name="" value="确定注册" style="margin-top:10px;border-radius:10px;height:40px;background: #FF5151;color:white;width:200px"></td>
             </table>
             
@@ -255,7 +309,7 @@
     </div>
      </section>
 
-    <section style="height:400px;margin-top:20px" class="juzhong">
+    <section style="height:550px;margin-top:20px" class="juzhong">
     <div id="renmendongtai">
         <h4>热门动态</h4>
         <p class="xiahuaxian" style="margin-top:-20px;"></p>
@@ -272,7 +326,163 @@
             </tr>
         </table>
     </div>
-    <div id="jingcaihuodong"></div>
+    <div id="jingcaihuodong">
+        <h4>精彩活动</h4>
+        <p class="xiahuaxian" style="margin-top:-20px;"></p>
+        <div id="content" style="width:100%;height:470px;">
+            <div style="overflow:hidden;height:100%;width:100%">
+                <!-- Swiper -->
+            <div class="swiper-container1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/cc.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/bb.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div>
+                </div>
+                <div class="swiper-slide"><div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/dd.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/ff.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div></div>
+                <div class="swiper-slide"><div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/ff.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/bb.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div></div>
+                <div class="swiper-slide"><div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/cc.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/dd.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div></div>
+                <div class="swiper-slide"><div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/bb.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/ff.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div></div>
+                <div class="swiper-slide"><div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/bb.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/dd.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div></div>
+                <div class="swiper-slide"><div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/bb.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/cc.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div></div>
+                <div class="swiper-slide"><div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/cc.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/cc.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div></div>
+                <div class="swiper-slide"><div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/cc.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/cc.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div></div>
+                <div class="swiper-slide"><div class="zuo"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/cc.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:160px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div>
+                    
+                    </div>
+                    <div class="you"><div style="float:left;width:120px;hegiht:100%;margin-right:10px;margin-top:10px"><img src="images/cc.jpg" height="100%" width="100%" alt=""></div>
+                    <div style="float:left;width:150px;text-align:left;margin-top:10px">
+                    <span style="color:#FF5151;">学习圣地</span><br>
+                    <span style="font-size:12px;">时间：7月20号(星期6)</span><br>
+                    <span style="font-size:12px;">地点：安托山</span>
+                    </div></div></div>
+            </div>
+        
+        
+    </div>
+            </div>
+        </div>
+    </div>
     </section>
      <footer >
         <div class='juzhong'>
@@ -305,6 +515,17 @@
         el: '.swiper-pagination3',
         clickable: true,
       },
+    });
+
+    var swiper = new Swiper('.swiper-container1', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 20,
+        mousewheel: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
     });
   </script>
 </html>

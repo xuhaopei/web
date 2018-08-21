@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <script type="text/javascript" src='jquery-3.3.1.min.js'></script>
+        
+
+       <style>
+           #call{
+               display: inline;
+               margin-left: 50%;
+               border-radius: ;
+           }
+           #number{
+               color:red;
+               display: inline;
+               text-align: center;
+           }
+           #zixun{
+
+               color:black;
+               display: inline-block;
+           }
+           #daohang{
+               width: 100%;
+               height: 40px;
+               background: red;
+           }
+           .juzhong{
+               position:relative;
+               width: 68%;
+               margin: 0 auto;
+           }
+           footer{
+
+               text-align: center;
+               background: rgba(0,0,0,0.05);
+           }
+           footer .row{
+            text-align: center;
+               position:relative;
+               
+               height: 30px;
+               line-height: 30px;
+               font-size: 12px;
+               color:#444;
+           }
+
+           #daohang li{
+               list-style: none;
+               display: inline-block;
+               line-height:40px;
+               width: 100px;
+               text-align: center;
+               margin-left: -5px;
+           }
+           #daohang li:hover{
+               background: #FF5151;
+               cursor:pointer;
+           }
+           #daohang li a{
+               text-decoration:none;
+               color: white;
+           }
+           #daohang nav #study_courese{
+               width:170px;
+               background: #FF5151;
+               position: absolute;
+               left:95px;
+               z-index: 2;
+               display:none;
+           }
+           #daohang nav #study_courese li{
+               margin-left: 0px;
+               width: 170px;
+               text-align: left;
+           }
+        
+           #baomingbiao{
+            float: right;
+            margin-top: -30%;
+            margin-left: 5px;
+            height:100%;
+            width:28%;
+            background:rgba(0,0,0,0.02);
+           }
+           
+            #baomingbiao table input{
+                width:160px;
+                height: 30px;
+            }
+            #baomingbiao table td{
+                font-size: 15px;
+                text-align: right;
+            }
+            span{
+              font-size: 22px;
+              color:#FF5151;
+            }
+           p{
+            font-size: 15px;
+           }
+           #you{
+              float: right;
+              margin-right: 15%;
+              margin-top: -70%;
+              border:solid 3px  rgba(0,0,0,0.05);
+           }
+           #ulyou{
+            list-style-type: none;
+           padding: 20px;         
+            overflow: hidden;
+            
+           }
+
+           .a2{
+             display: block;
+            color: black;
+            text-align: center;
+            padding: 10px 5px;
+            text-decoration: none;
+            margin-left: -8px;
+           }
+           .a2:hover{
+            background-color: #FF5151;
+           }
+          #kuang{
+            border:solid 10px #FFD9EC;
+          }
+       </style>
+       <script type="text/javascript">
+       $(document).ready(function() {
+        
+           $("#daohan_courese").mouseenter(function(event) {
+                $("#study_courese").slideDown(300);
+           });
+           
+           $("#daohan_courese").mouseleave(function(event) {
+                $("#study_courese").slideUp(300);
+           });
+           $("#study_courese").mouseenter(function(){
+                $("#study_courese").stop();
+           });
+           $("#study_courese").mouseleave(function(){
+                $("#study_courese").slideUp(300);
+           });
+       });
+       </script>
+    </head>
+    <body style="position:relative;margin:0 auto;width:1300px;">
+    
+    <header style="position:relative;width:100%;">
+        <div class='juzhong'style="margin-bottom: 10px;height: 90px;">
+         <img src="images/aa.jpg" height="100%" alt="" />
+         <img src="images/call.png" height="20%" width="4%" alt="" id="call"/>
+         <div id="zixun">咨询热线：</div>
+         <div id="number">400-112-1728</div>
+        </div>
+         <div id="daohang">
+             <nav class="juzhong" style="">
+                 <li><a href="index.html">唯艺首页</a></li>
+                 <li id="daohan_courese"><a href="#">学习课程</a></li>
+                 <li><a href="#">学习方法</a></li>
+                 <li><a href="#">学员介绍</a></li>
+                 <li><a href="#">活动介绍</a></li>
+                 <li><a href="#">游学与留学</a></li>
+                 <div id="study_courese" style="">
+                     <li><a href="#">日语寒暑假班</a></li>
+                     <li><a href="#">日语初级课程</a></li>
+                     <li><a href="#">日语中级课程</a></li>
+                     <li><a href="#">日语高级课程</a></li>
+                     <li><a href="#">留学生考试辅导班(EJU)</a></li>
+                 </div>
+             </nav>
+         </div>
+    </header>
+
+    <section style="height:400px;margin-top:15px" class="juzhong">
+    <div style="float: left;"><img src="images/zi.jpg"width="70%"></div>
+    <div id="baomingbiao">
+        <div style="width:100%;height:30px;background:#FF5151;color:white;line-height: 30px;text-align:center;">立即注册</div>
+        <div style="width:100%;height:60px;" >
+          <img src="2.jpg" height="100%" width="100%" alt="">
+        </div>
+        <form>
+            <table cellpadding="10" width="100%">
+                <tr><td>姓名:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td>手机:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td>邮箱:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td>课程:</td><td><input type="text" name="" value=""></td></tr>
+                <td colspan="2" style="text-align:center"><input type="submit" name="" value="确定注册" style="margin-top:10px;border-radius:10px;height:40px;background: #FF5151;color:white;width:200px"></td>
+            </table>
+            
+        </form>
+    </div>
+    
+
+     
+ </section>
+     <div style="position: relative;width:46%;height:1100px;border:solid 1px black;margin-left:16%;margin-top: -8%; padding: 10px;font-size: 20px; " >
+            <span>日语寒暑假班</span>
+                
+                            <p>该课程适合小学和初中的学生，学习日语的入门、简单的对话、动漫场景对白、日文歌曲、<br>日本文化等，短短的1-2月也能让您的孩子脱口而出。</p>
+                       
+                            <br>适合对象：小学、初中喜欢动漫和日语的学生
+                            <br>使用教材：唯艺教育独家教材
+                            <br>教学师资：唯艺教育日语教学名师团队
+                            <br>教学目的：让同龄的小朋友通过日语学习，可以简单的自我介绍。
+                        
+                            <br>课程简介<br>
+                            <p>唯艺教育推出日语暑期班，6—10人小班学习制，面对面零距离交流，老师日语授课多年，<br>深受广大小朋友的喜欢。循环开班，随到随学，通过学习，帮助学员简单的用日语表<br>达自己的意见。</p>
+                        
+                            <br>唯艺教育优势<br>
+<p>1、为日语爱好者提供高质量的日语培训和服务，让学员有家的感觉。<br>
+2、聘请从事教师行业多年的资深中外教。<br>
+3、地理位置优越，学习环境优美，给学生提供轻松的环境学习日语。<br>
+4、及时更新日语和日本相关的资讯，让学生更好的了解流行的日语。<br></p>
+                        
+                            <br>课程详情<br>
+<p>招生对象：日语零基础的小学和初中生。<br>
+课程目标：50音图，简单的对话，日文歌曲，动漫经典对白。<br>
+开班形式：6-10人。<br>
+使用教材：《日语50音发音入门王》<br></p>
+                       
+                         <br>授课内容：<br><p>
+1.50个基础发音、100种字源变化、15行假名的发音诀窍，一网打尽。帮助学生日语学习第一步。<br>
+2.约300个配图常用词汇，强化记忆，让学生过目不忘。<br>
+3.2大生活常用语、30种流行句式全面收纳。<br>
+4.3大热播动漫、5位歌手代表作。<br>
+5.9大日本文化体系。<br></p>
+                       
+                                                   <br> 课程详情<br>
+<p>招生对象：日语零基础的小学和初中生。<br>
+课程目标：50音图，简单的对话，日文歌曲，动漫经典对白。<br>
+开班形式：6-10人。<br>
+使用教材：《日语50音发音入门王》<br></p>
+
+                
+     </div>
+     <div id="you">
+     <div id="kuang">
+       
+    <ul id="ulyou">
+    <li class="kecheng"><a href="#home" class="a2" style="background-color: #FF5151;">日语寒暑假班</a></li>
+    <li class="kecheng"><a href="#news" class="a2" >日语初级课程</a></li>
+    <li class="kecheng"><a href="#contact" class="a2">日语中级课程</a></li>
+    <li class="kecheng"><a href="#about" class="a2">日语高级课程</a></li>
+    <li class="kecheng"><a href="#about" class="a2" >留学生考试辅导班（EJU）</a></li>
+    </ul>
+</div>  
+</div>
+     <footer >
+        <div class='juzhong'>
+        <div class="row">深圳市唯艺教育</div>
+        <div class="row">福田区车公庙金润大厦</div>
+        <div class="row">咨询电话：400-112-1728，欢迎来电咨询！</div>
+        </div>
+     </footer>
+    
+    </body>
+  
+
+</html>
