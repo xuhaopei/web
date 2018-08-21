@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        
         <link rel="stylesheet" href="dist/css/swiper.min.css">
         <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
         <script type="text/javascript" src='jquery-3.3.1.min.js'></script>
@@ -12,6 +12,7 @@
            #call{
                display: inline;
                margin-left: 50%;
+               border-radius: ;
            }
            #number{
                color:red;
@@ -35,7 +36,7 @@
            }
            footer{
                text-align: center;
-               background: rgba(0,0,0,0.2);
+               background: rgba(0,0,0,0.05);
            }
            footer .row{
             text-align: center;
@@ -78,16 +79,17 @@
            }
            #lunbotu{
             float: left;
-            border:1px solid black;
+            
             height:100%;
             width:70%;
            }
            #baomingbiao{
             float: left;
-            border:1px solid black;
+            
             margin-left: 5px;
             height:100%;
             width:28%;
+            background:rgba(0,0,0,0.02);
            }
            .swiper-container {
               width: 100%;
@@ -112,6 +114,60 @@
               -webkit-align-items: center;
               align-items: center;
             }
+            #baomingbiao table input{
+                width:160px;
+                height: 30px;
+            }
+            #baomingbiao table td{
+                font-size: 15px;
+                text-align: right;
+            }
+            #renmendongtai{
+                
+                padding-left: 5px;
+                float:left;
+                width:30%;
+                height: 100%;
+                border-radius: 10px;
+                
+            }
+            #jingcaihuodong{
+                
+                margin-left:10px;
+                float:left;
+                width:67%;
+                height: 100%;
+                border-radius: 10px;
+                border:1px solid black;
+            
+            }
+            .xiahuaxian{
+                position:absolute;
+                width:70px;
+                border:2px solid #FF5151;
+            }
+            #renmendongtai table tr{
+                font-size:13px;
+                width:100%;
+            }
+            #renmendongtai table tr .zuo{
+                width:70%;
+            }
+            #renmendongtai table tr .you{
+                width:30%;
+                text-align: right;
+            }
+            #renmendongtai table tr p{
+                width:100%;margin:0px;
+            }
+            #renmendongtai table tr a{
+                color:black;
+                text-decoration: none;
+            }
+            #renmendongtai table tr a:hover{
+                color:#FF5151;
+            }
+            
        </style>
        <script type="text/javascript">
        $(document).ready(function() {
@@ -132,7 +188,7 @@
        });
        </script>
     </head>
-    <body style="position:relative;margin:0 auto;width:100%;min-width:980px">
+    <body style="position:relative;margin:0 auto;width:1300px;">
     
     <header style="position:relative;width:100%;">
         <div class='juzhong'style="margin-bottom: 10px;height: 90px;">
@@ -160,8 +216,8 @@
          </div>
     </header>
 
-    <section style="height:400px;" class="juzhong">
-    <div id="lunbotu" style="border:1px solid black">
+    <section style="height:400px;margin-top:15px" class="juzhong">
+    <div id="lunbotu" >
         <!-- Swiper -->
       <div class="swiper-container swiper1">
         <div class="swiper-wrapper">
@@ -182,17 +238,41 @@
     </div>
     <div id="baomingbiao">
         <div style="width:100%;height:30px;background:#FF5151;color:white;line-height: 30px;text-align:center;">立即注册</div>
+        <div style="width:100%;height:60px;background-image: url('2.jpg');" ></div>
         <form>
-            <table>
-                <tr></tr>
+            <table cellpadding="10" width="100%">
+                <tr><td>姓名:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td>手机:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td>邮箱:</td><td><input type="text" name="" value=""></td></tr>
+                <tr><td>课程:</td><td><input type="text" name="" value=""></td></tr>
+                <td colspan="2" style="text-align:center"><input type="submit" name="" value="确定注册" style="margin-top:10px;border-radius:10px;height:40px;background: #FF5151;color:white;width:200px"></td>
             </table>
+            
         </form>
     </div>
      </section>
 
-
+    <section style="height:400px;margin-top:20px" class="juzhong">
+    <div id="renmendongtai">
+        <h4>热门动态</h4>
+        <p class="xiahuaxian" style="margin-top:-20px;"></p>
+        <table cellpadding="6">
+            <tr><td class="zuo"><a href="#"><p>怎么学习日语呢</p></a></td><td class="you">2018/8/21</td>
+            </tr>
+            <tr><td class="zuo"><a href="#"><p>怎么学习日语呢</p></a></td><td class="you">2018/8/21</td>
+            </tr>
+            <tr><td class="zuo"><a href="#"><p>怎么学习日语呢</p></a></td><td class="you">2018/8/21</td>
+            </tr>
+            <tr><td class="zuo"><a href="#"><p>怎么学习日语呢</p></a></td><td class="you">2018/8/21</td>
+            </tr>
+            <tr><td class="zuo"><a href="#"><p>怎么学习日语呢</p></a></td><td class="you">2018/8/21</td>
+            </tr>
+        </table>
+    </div>
+    <div id="jingcaihuodong"></div>
+    </section>
      <footer >
-         <div class='juzhong'>
+        <div class='juzhong'>
         <div class="row">深圳市唯艺教育</div>
         <div class="row">福田区车公庙金润大厦</div>
         <div class="row">咨询电话：400-112-1728，欢迎来电咨询！</div>
