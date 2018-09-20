@@ -1,0 +1,26 @@
+[
+    {
+      "title":"电脑系统(U盘安装）",
+      "type":["PE系统","WIN7","WIN8","WIN10","XP"]
+    },
+    {
+      "title":"电脑系统（直接安装）",
+      "type":["WIN7","WIN8","WIN10"]
+    },
+    {
+      "title":"Office",
+      "type":["office2003","office2007","office2010","office2013","office2016"]
+    },
+    {
+      "title":"Project",
+      "type":["project2007","project2010","project2016"]
+    },
+    {
+      "title":"Visio",
+      "type":["visio2003","visio2007","visio2010","visio2013","visio2016"]
+    },
+    {
+      "title":"PDF工具",
+      "type":["PDF转换器"]
+    }
+]
